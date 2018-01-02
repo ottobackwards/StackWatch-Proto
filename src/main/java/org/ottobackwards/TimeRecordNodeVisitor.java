@@ -16,9 +16,18 @@
  * limitations under the License.
  */
 
-package org.otto;
+package org.ottobackwards;
 
+/**
+ * Visitor for decent through a TimeRecordNode tree.
+ */
 public interface TimeRecordNodeVisitor {
 
+  /**
+   * Visit a {@code TimeRecordNode}.
+   *
+   * @param level the depth level of this node
+   * @param node the {@code TimeRecordNode}
+   */
   void visitRecord(int level, TimeRecordNode node);
 }
